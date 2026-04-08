@@ -1,0 +1,408 @@
+[
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "SETTINGS",
+        "importPath": "src.config",
+        "description": "src.config",
+        "isExtraImport": true,
+        "detail": "src.config",
+        "documentation": {}
+    },
+    {
+        "label": "SETTINGS",
+        "importPath": "src.config",
+        "description": "src.config",
+        "isExtraImport": true,
+        "detail": "src.config",
+        "documentation": {}
+    },
+    {
+        "label": "SETTINGS",
+        "importPath": "src.config",
+        "description": "src.config",
+        "isExtraImport": true,
+        "detail": "src.config",
+        "documentation": {}
+    },
+    {
+        "label": "SETTINGS",
+        "importPath": "src.config",
+        "description": "src.config",
+        "isExtraImport": true,
+        "detail": "src.config",
+        "documentation": {}
+    },
+    {
+        "label": "Settings",
+        "importPath": "src.config",
+        "description": "src.config",
+        "isExtraImport": true,
+        "detail": "src.config",
+        "documentation": {}
+    },
+    {
+        "label": "Settings",
+        "importPath": "src.config",
+        "description": "src.config",
+        "isExtraImport": true,
+        "detail": "src.config",
+        "documentation": {}
+    },
+    {
+        "label": "Settings",
+        "importPath": "src.config",
+        "description": "src.config",
+        "isExtraImport": true,
+        "detail": "src.config",
+        "documentation": {}
+    },
+    {
+        "label": "Iterable",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "Settings",
+        "kind": 6,
+        "importPath": "src.config",
+        "description": "src.config",
+        "peekOfCode": "class Settings:\n    #CONFIGURACION DE RUTAS\n    #porque: estas son las carpetas del pipeline. Esta es la raiz del proyecto y el script debe saber donde leer/escribir\n    input_dir: Path = Path(\"input\")      # Carpeta donde están los archivos de entrada\n    output_dir: Path = Path(\"output\")    # Carpeta donde se guardan resultados\n    logs_dir: Path = Path(\"logs\")        # Carpeta para archivos de log\n    #NOMBRES DE ARCHIVOS DE SALIDA\n    output_clean_csv: str = \"clean_data.csv\"  # Archivo con datos limpios\n    output_errors_csv: str = \"errors.csv\"     # Archivo con errores encontrados\n    #EXTENSIONES PERMITIDAS",
+        "detail": "src.config",
+        "documentation": {}
+    },
+    {
+        "label": "Settings",
+        "kind": 6,
+        "importPath": "src.config",
+        "description": "src.config",
+        "peekOfCode": "class Settings:\n    input_dir = Path(\"input\")\n# NO hay instancia global\nCada archivo crea su propio objeto:\nPython\n# archivo1.py\nfrom src.config import Settings\nconfig = Settings()  # ⬅️ Objeto #1\n# archivo2.py\nfrom src.config import Settings",
+        "detail": "src.config",
+        "documentation": {}
+    },
+    {
+        "label": "input_dir",
+        "kind": 5,
+        "importPath": "src.config",
+        "description": "src.config",
+        "peekOfCode": "input_dir = Path(\"input\")\noutput_dir = Path(\"output\")\noutput_file = \"clean_data.csv\"\nmax_files = 100\nVentajas:\nCambias UNA VEZ, afecta TODO\nQuieres cambiar \"input\" → \"datos_entrada\"\nSolo cambias en config.py\nAutomáticamente cambia en TODO el proyecto ✅\nSabes dónde buscar",
+        "detail": "src.config",
+        "documentation": {}
+    },
+    {
+        "label": "output_dir",
+        "kind": 5,
+        "importPath": "src.config",
+        "description": "src.config",
+        "peekOfCode": "output_dir = Path(\"output\")\noutput_file = \"clean_data.csv\"\nmax_files = 100\nVentajas:\nCambias UNA VEZ, afecta TODO\nQuieres cambiar \"input\" → \"datos_entrada\"\nSolo cambias en config.py\nAutomáticamente cambia en TODO el proyecto ✅\nSabes dónde buscar\n¿Cuál es el nombre del archivo de salida? → Miras config.py",
+        "detail": "src.config",
+        "documentation": {}
+    },
+    {
+        "label": "output_file",
+        "kind": 5,
+        "importPath": "src.config",
+        "description": "src.config",
+        "peekOfCode": "output_file = \"clean_data.csv\"\nmax_files = 100\nVentajas:\nCambias UNA VEZ, afecta TODO\nQuieres cambiar \"input\" → \"datos_entrada\"\nSolo cambias en config.py\nAutomáticamente cambia en TODO el proyecto ✅\nSabes dónde buscar\n¿Cuál es el nombre del archivo de salida? → Miras config.py\n¿Cuántos archivos procesa? → Miras config.py",
+        "detail": "src.config",
+        "documentation": {}
+    },
+    {
+        "label": "max_files",
+        "kind": 5,
+        "importPath": "src.config",
+        "description": "src.config",
+        "peekOfCode": "max_files = 100\nVentajas:\nCambias UNA VEZ, afecta TODO\nQuieres cambiar \"input\" → \"datos_entrada\"\nSolo cambias en config.py\nAutomáticamente cambia en TODO el proyecto ✅\nSabes dónde buscar\n¿Cuál es el nombre del archivo de salida? → Miras config.py\n¿Cuántos archivos procesa? → Miras config.py\nTODO está ahí 📋",
+        "detail": "src.config",
+        "documentation": {}
+    },
+    {
+        "label": "input_folder",
+        "kind": 5,
+        "importPath": "src.config",
+        "description": "src.config",
+        "peekOfCode": "input_folder = \"input\"\nmax_archivos = 100\noutput = \"clean_data.csv\"\n# archivo2.py  \ncarpeta_entrada = \"input\"  # ¿Es la misma?\nlimite = 100  # ¿Es el mismo?\nresultado = \"clean_data.csv\"  # ¿Es el mismo?\n# archivo3.py\ninput_dir = \"imput\"  # 😱 ¡ERROR DE TYPO!\nmax_files = 50  # 🤔 ¿Por qué 50 y no 100?",
+        "detail": "src.config",
+        "documentation": {}
+    },
+    {
+        "label": "max_archivos",
+        "kind": 5,
+        "importPath": "src.config",
+        "description": "src.config",
+        "peekOfCode": "max_archivos = 100\noutput = \"clean_data.csv\"\n# archivo2.py  \ncarpeta_entrada = \"input\"  # ¿Es la misma?\nlimite = 100  # ¿Es el mismo?\nresultado = \"clean_data.csv\"  # ¿Es el mismo?\n# archivo3.py\ninput_dir = \"imput\"  # 😱 ¡ERROR DE TYPO!\nmax_files = 50  # 🤔 ¿Por qué 50 y no 100?\noutput_file = \"datos_limpios.csv\"  # 🤨 ¿Diferente nombre?",
+        "detail": "src.config",
+        "documentation": {}
+    },
+    {
+        "label": "output",
+        "kind": 5,
+        "importPath": "src.config",
+        "description": "src.config",
+        "peekOfCode": "output = \"clean_data.csv\"\n# archivo2.py  \ncarpeta_entrada = \"input\"  # ¿Es la misma?\nlimite = 100  # ¿Es el mismo?\nresultado = \"clean_data.csv\"  # ¿Es el mismo?\n# archivo3.py\ninput_dir = \"imput\"  # 😱 ¡ERROR DE TYPO!\nmax_files = 50  # 🤔 ¿Por qué 50 y no 100?\noutput_file = \"datos_limpios.csv\"  # 🤨 ¿Diferente nombre?\n\"\"\"",
+        "detail": "src.config",
+        "documentation": {}
+    },
+    {
+        "label": "carpeta_entrada",
+        "kind": 5,
+        "importPath": "src.config",
+        "description": "src.config",
+        "peekOfCode": "carpeta_entrada = \"input\"  # ¿Es la misma?\nlimite = 100  # ¿Es el mismo?\nresultado = \"clean_data.csv\"  # ¿Es el mismo?\n# archivo3.py\ninput_dir = \"imput\"  # 😱 ¡ERROR DE TYPO!\nmax_files = 50  # 🤔 ¿Por qué 50 y no 100?\noutput_file = \"datos_limpios.csv\"  # 🤨 ¿Diferente nombre?\n\"\"\"\nfrom __future__ import annotations #permite usar anotaciones de tikpos (type hints) sin problema de orden/imports  en python moderno\nfrom dataclasses import dataclass #te deja definir una \"config\" como objeto simple, ordenado y facil de mantener",
+        "detail": "src.config",
+        "documentation": {}
+    },
+    {
+        "label": "limite",
+        "kind": 5,
+        "importPath": "src.config",
+        "description": "src.config",
+        "peekOfCode": "limite = 100  # ¿Es el mismo?\nresultado = \"clean_data.csv\"  # ¿Es el mismo?\n# archivo3.py\ninput_dir = \"imput\"  # 😱 ¡ERROR DE TYPO!\nmax_files = 50  # 🤔 ¿Por qué 50 y no 100?\noutput_file = \"datos_limpios.csv\"  # 🤨 ¿Diferente nombre?\n\"\"\"\nfrom __future__ import annotations #permite usar anotaciones de tikpos (type hints) sin problema de orden/imports  en python moderno\nfrom dataclasses import dataclass #te deja definir una \"config\" como objeto simple, ordenado y facil de mantener\nfrom pathlib import Path #rutas de archivos robustas (mejor que strings, funciona bien en windows/linux)",
+        "detail": "src.config",
+        "documentation": {}
+    },
+    {
+        "label": "resultado",
+        "kind": 5,
+        "importPath": "src.config",
+        "description": "src.config",
+        "peekOfCode": "resultado = \"clean_data.csv\"  # ¿Es el mismo?\n# archivo3.py\ninput_dir = \"imput\"  # 😱 ¡ERROR DE TYPO!\nmax_files = 50  # 🤔 ¿Por qué 50 y no 100?\noutput_file = \"datos_limpios.csv\"  # 🤨 ¿Diferente nombre?\n\"\"\"\nfrom __future__ import annotations #permite usar anotaciones de tikpos (type hints) sin problema de orden/imports  en python moderno\nfrom dataclasses import dataclass #te deja definir una \"config\" como objeto simple, ordenado y facil de mantener\nfrom pathlib import Path #rutas de archivos robustas (mejor que strings, funciona bien en windows/linux)\n@dataclass (frozen=True)  #frozen=True significa inmutable, una vez creado no lo puedes cambiar accidentalmente",
+        "detail": "src.config",
+        "documentation": {}
+    },
+    {
+        "label": "input_dir",
+        "kind": 5,
+        "importPath": "src.config",
+        "description": "src.config",
+        "peekOfCode": "input_dir = \"imput\"  # 😱 ¡ERROR DE TYPO!\nmax_files = 50  # 🤔 ¿Por qué 50 y no 100?\noutput_file = \"datos_limpios.csv\"  # 🤨 ¿Diferente nombre?\n\"\"\"\nfrom __future__ import annotations #permite usar anotaciones de tikpos (type hints) sin problema de orden/imports  en python moderno\nfrom dataclasses import dataclass #te deja definir una \"config\" como objeto simple, ordenado y facil de mantener\nfrom pathlib import Path #rutas de archivos robustas (mejor que strings, funciona bien en windows/linux)\n@dataclass (frozen=True)  #frozen=True significa inmutable, una vez creado no lo puedes cambiar accidentalmente\nclass Settings:\n    #CONFIGURACION DE RUTAS",
+        "detail": "src.config",
+        "documentation": {}
+    },
+    {
+        "label": "max_files",
+        "kind": 5,
+        "importPath": "src.config",
+        "description": "src.config",
+        "peekOfCode": "max_files = 50  # 🤔 ¿Por qué 50 y no 100?\noutput_file = \"datos_limpios.csv\"  # 🤨 ¿Diferente nombre?\n\"\"\"\nfrom __future__ import annotations #permite usar anotaciones de tikpos (type hints) sin problema de orden/imports  en python moderno\nfrom dataclasses import dataclass #te deja definir una \"config\" como objeto simple, ordenado y facil de mantener\nfrom pathlib import Path #rutas de archivos robustas (mejor que strings, funciona bien en windows/linux)\n@dataclass (frozen=True)  #frozen=True significa inmutable, una vez creado no lo puedes cambiar accidentalmente\nclass Settings:\n    #CONFIGURACION DE RUTAS\n    #porque: estas son las carpetas del pipeline. Esta es la raiz del proyecto y el script debe saber donde leer/escribir",
+        "detail": "src.config",
+        "documentation": {}
+    },
+    {
+        "label": "output_file",
+        "kind": 5,
+        "importPath": "src.config",
+        "description": "src.config",
+        "peekOfCode": "output_file = \"datos_limpios.csv\"  # 🤨 ¿Diferente nombre?\n\"\"\"\nfrom __future__ import annotations #permite usar anotaciones de tikpos (type hints) sin problema de orden/imports  en python moderno\nfrom dataclasses import dataclass #te deja definir una \"config\" como objeto simple, ordenado y facil de mantener\nfrom pathlib import Path #rutas de archivos robustas (mejor que strings, funciona bien en windows/linux)\n@dataclass (frozen=True)  #frozen=True significa inmutable, una vez creado no lo puedes cambiar accidentalmente\nclass Settings:\n    #CONFIGURACION DE RUTAS\n    #porque: estas son las carpetas del pipeline. Esta es la raiz del proyecto y el script debe saber donde leer/escribir\n    input_dir: Path = Path(\"input\")      # Carpeta donde están los archivos de entrada",
+        "detail": "src.config",
+        "documentation": {}
+    },
+    {
+        "label": "SETTINGS",
+        "kind": 5,
+        "importPath": "src.config",
+        "description": "src.config",
+        "peekOfCode": "SETTINGS = Settings()  # ⬅️ Se crea UNA VEZ aquí\nTodos importan EL MISMO objeto:\nPython\n# archivo1.py\nfrom src.config import SETTINGS  # Importa el objeto\n# archivo2.py\nfrom src.config import SETTINGS  # Importa EL MISMO objeto\n# archivo3.py\nfrom src.config import SETTINGS  # Importa EL MISMO objeto\nVentajas:",
+        "detail": "src.config",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "kind": 5,
+        "importPath": "src.config",
+        "description": "src.config",
+        "peekOfCode": "config = Settings()  # ⬅️ Objeto #1\n# archivo2.py\nfrom src.config import Settings\nmi_config = Settings()  # ⬅️ Objeto #2 (diferente)\n# archivo3.py\nfrom src.config import Settings\najustes = Settings()  # ⬅️ Objeto #3 (diferente)\n\"\"\"\nSETTINGS = Settings()  # Crea UNA instancia para todo el proyecto",
+        "detail": "src.config",
+        "documentation": {}
+    },
+    {
+        "label": "mi_config",
+        "kind": 5,
+        "importPath": "src.config",
+        "description": "src.config",
+        "peekOfCode": "mi_config = Settings()  # ⬅️ Objeto #2 (diferente)\n# archivo3.py\nfrom src.config import Settings\najustes = Settings()  # ⬅️ Objeto #3 (diferente)\n\"\"\"\nSETTINGS = Settings()  # Crea UNA instancia para todo el proyecto",
+        "detail": "src.config",
+        "documentation": {}
+    },
+    {
+        "label": "ajustes",
+        "kind": 5,
+        "importPath": "src.config",
+        "description": "src.config",
+        "peekOfCode": "ajustes = Settings()  # ⬅️ Objeto #3 (diferente)\n\"\"\"\nSETTINGS = Settings()  # Crea UNA instancia para todo el proyecto",
+        "detail": "src.config",
+        "documentation": {}
+    },
+    {
+        "label": "SETTINGS",
+        "kind": 5,
+        "importPath": "src.config",
+        "description": "src.config",
+        "peekOfCode": "SETTINGS = Settings()  # Crea UNA instancia para todo el proyecto",
+        "detail": "src.config",
+        "documentation": {}
+    },
+    {
+        "label": "find_excel_files",
+        "kind": 2,
+        "importPath": "src.io_excel",
+        "description": "src.io_excel",
+        "peekOfCode": "def find_excel_files(input_dir: Path, extensions: tuple[str, ...]) -> list[Path]:\n    \"\"\"\n    Encuentra archivos Excel dentro de input_dir (no recursivo).\n    Devuelve una lista ordenada para resultados deterministas.\n    \"\"\"\n    #Por qué: error temprano y claro si el usuario borró la carpeta o ejecuta desde un lugar incorrecto.\n    #Un programador serio falla rápido y con mensaje claro.\n    if not input_dir.exists():\n        raise FileNotFoundError(f\"No existe la carpeta de entrada: {input_dir.resolve()}\")\n    #busca todos los archivos en esa carpeta con esas extensiones (no recursivo).",
+        "detail": "src.io_excel",
+        "documentation": {}
+    },
+    {
+        "label": "read_excel_file",
+        "kind": 2,
+        "importPath": "src.io_excel",
+        "description": "src.io_excel",
+        "peekOfCode": "def read_excel_file(path: Path) -> pd.DataFrame:\n    \"\"\"\n    Lee un Excel y devuelve un DataFrame.\n    Regla de contrato:\n    - Devuelve SIEMPRE un DataFrame.\n    - Si no puede, lanza un error con contexto (nombre de archivo).\n    \"\"\"\n    #pandas se encarga de leer el Excel y devolver DataFrame.\n    try:\n        #df = pd.read_excel(path, sheet_name=0)  # primera hoja",
+        "detail": "src.io_excel",
+        "documentation": {}
+    },
+    {
+        "label": "setup_logging",
+        "kind": 2,
+        "importPath": "src.main",
+        "description": "src.main",
+        "peekOfCode": "def setup_logging(logs_dir: Path) -> None:\n    logs_dir.mkdir(parents=True, exist_ok=True)\n    logging.basicConfig(\n        level=logging.INFO,\n        format=\"%(asctime)s | %(levelname)s | %(message)s\",\n        handlers=[\n            logging.FileHandler(logs_dir / \"app.log\", encoding=\"utf-8\"),\n            logging.StreamHandler(),\n        ],\n    )",
+        "detail": "src.main",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "src.main",
+        "description": "src.main",
+        "peekOfCode": "def main() -> int:\n    setup_logging(SETTINGS.logs_dir)\n    logging.info(\"Inicio del pipeline: Excel -> CSV limpio\")\n    #si no hay archivos, el programa no puede hacer nada. Devuelve código 1 (fallo controlado).\n    excel_files = find_excel_files(SETTINGS.input_dir, SETTINGS.excel_extensions)\n    if not excel_files:\n        logging.warning(\"No se encontraron Excel en /input. Agrega al menos 1 archivo .xlsx\")\n        return 1\n    logging.info(\"Excel encontrados: %s\", \", \".join(f.name for f in excel_files))\n    \"\"\"",
+        "detail": "src.main",
+        "documentation": {}
+    },
+    {
+        "label": "is_empty",
+        "kind": 2,
+        "importPath": "src.transform",
+        "description": "src.transform",
+        "peekOfCode": "def is_empty(value: Any) -> bool:\n    \"\"\"\n    Devuelve True si el valor cuenta como 'vacío' para nuestro análisis.\n    \"\"\"\n    if value is None:\n        return True\n    texto = str(value).strip().lower()\n    valores_vacios = {\"\", \"nan\", \"none\"}  # set: rápido y limpio\n    return texto in valores_vacios\ndef has_letters(value: Any) -> bool:",
+        "detail": "src.transform",
+        "documentation": {}
+    },
+    {
+        "label": "has_letters",
+        "kind": 2,
+        "importPath": "src.transform",
+        "description": "src.transform",
+        "peekOfCode": "def has_letters(value: Any) -> bool:\n    \"\"\"\n    Devuelve True si el valor contiene al menos una letra (A-Z o acentos).\n    Útil para detectar encabezados tipo: \"Destination\", \"Distance (km)\", etc.\n    \"\"\"\n    # TODO: implementa\n    raise NotImplementedError\ndef detect_header_row(raw_df, max_scan_rows: int = 30) -> int:\n    \"\"\"\n    Detecta la fila más probable de encabezados en un DataFrame leído con header=None.",
+        "detail": "src.transform",
+        "documentation": {}
+    },
+    {
+        "label": "detect_header_row",
+        "kind": 2,
+        "importPath": "src.transform",
+        "description": "src.transform",
+        "peekOfCode": "def detect_header_row(raw_df, max_scan_rows: int = 30) -> int:\n    \"\"\"\n    Detecta la fila más probable de encabezados en un DataFrame leído con header=None.\n    Retorna el índice (int) de la fila candidata.\n    \"\"\"\n    # TODO: implementa el scoring por fila\n    raise NotImplementedError",
+        "detail": "src.transform",
+        "documentation": {}
+    }
+]
